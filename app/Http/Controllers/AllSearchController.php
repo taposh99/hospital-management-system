@@ -213,7 +213,7 @@ class AllSearchController extends Controller
     	if (isset($request->district) or isset($request->bg)) {
 		   
 		    $ckResult = 1;
-		    // $latest_donor = Donor::latest()->take(5)->get();
+		    $latest_donor = Donor::latest()->take(5)->get();
     		// dd($request->district);
     		if (isset($request->district) && isset($request->bg)) {
     			
